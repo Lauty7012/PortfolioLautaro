@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h2><span>Lautaro</span>Molinas</h2>
+			<nav>
+				<a href="#">Home</a>
+				<a href="#">About me</a>
+				<a href="#">Projects</a>
+				<a href="#">Contact</a>
+			</nav>
+			<button class="hamburger">
+				<div class="bar"></div>
+			</button>
+		</div>
+	</header>
+	<nav class="mobile-nav">
+		<a href="#">Home</a>
+		<a href="#">About me</a>
+		<a href="#">Projects</a>
+		<a href="#">Contact</a>
+	</nav>
+	<main>
+		<section class="banner">
+			<div class="container">
+				<h1>
+					Frontend
+					<span>Developer</span>
+				</h1>
+
+				<h3>Apasionado desarrollador frontend siempre buscando oportunidades para aprender, mejorar y colaborar
+					en proyectos
+					que desafíen mi creatividad y conocimientos. </h3>
+
+				<div class="button" onclick="window.open('./assets/CvLautaroMolinas.pdf')">
+					<a href="#" class="anchor">
+						<span>Descargar CV</span>
+					</a>
+				</div>
+
+		</section>
+
+		<section id="experiencia">
+
+			<div class="container">
+				<h1>Experiencia</h1>
+				<p>Con una sólida base en el desarrollo web, he trabajado con diversas tecnologías para crear
+					experiencias cautivadoras y funcionales. Mi conjunto de habilidades incluye:</p>
+
+				<img src="./assets/images/html.png" alt="">
+				<img src="/assets/images/css.png" alt="">
+				<img src="/assets/images/javascript.png" alt="">
+				<img src="/assets/images/bootstrap.png" alt="">
+				<img src="assets/images/react.png" alt="">
+				<img src="/assets/images/node.png" alt="">
+
+
+				<p>Estas herramientas no son solo parte de mi caja de herramientas, sino que las empleo con maestría
+					para construir interfaces atractivas y dinámicas. Mi enfoque no solo se centra en el código, sino en
+					la creación de experiencias que dejan una impresión duradera.</p>
+			</div>
+		</section>
+		<div class="contact">
+			<div class="form-container">
+				<div class="form">
+					<span class="heading">Contactame</span>
+					<div class="social-links">
+						<a href="https://www.gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+						<a href="https://www.linkedin.com/in/lautaro-molinas/" target="_blank"><i
+								class="fab fa-linkedin-in"></i></a>
+					</div>
+
+
+					<form id="form">
+						<div class="field">
+							<label for="from_name">Nombre</label>
+							<input placeholder="Nombre" type="text" name="from_name" id="from_name" class="input">
+						</div>
+						<div class="field">
+							<label for="email_id">Correo Electrónico</label>
+							<input placeholder="example@gmail.com" id="mail" type="email" name="email_id" id="email_id"
+								class="input">
+						</div>
+						<div class="field">
+							<label for="message">Mensaje</label>
+							<textarea placeholder="Escribeme tu consulta" rows="10" cols="30" id="message"
+								name="message" class="textarea"></textarea>
+						</div>
+
+						<div class="button-container">
+							<input type="submit" id="button" value="Enviar" class="send-button">
+							<div class="reset-button-container">
+								<div id="reset-btn" class="reset-button">Reset</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		</section>
+		<footer>
+			<p>© Lautaro Molinas 2023 | Construido con pasión y código |
+		</footer>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+		<script type="text/javascript">
+			emailjs.init('g-Vwx9MRdor5BHm6c')
+		</script>
+
+
+	</main>
+	<script src="./assets/js/main.js"></script>
+	<script src="/assets/js/email.js"></script>
+</body>
+
+</html>
